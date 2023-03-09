@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-y: hidden;
+}
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --DarkGreen: rgb(9, 48, 9);
+}
+
+.main-box {
+  background: var(--Cream);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-content {
+  width: 70rem;
+  height: 50rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.box-img-content {
+  background-image: url(/Projeto-Site/img/image-product-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.box-text-content {
+  background-color: var(--White);
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  width: 29rem;
+}
+.box-text {
+  flex-direction: column;
+  display: flex;
+}
+.perfum-title {
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  color: var(--Darkgrayishblue);
+  text-transform: uppercase;
+  margin: 1.2rem 3rem 2rem 1rem;
+}
+
+.box-text h1 {
+  font-family: "Fraunces", serif;
+  font-size: 4rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.4px;
+  margin: 0 0rem 2.4rem 0rem;
+}
+
+.perfum-description {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  color: var(--Darkgrayishblue);
+  line-height: 2rem;
+  margin: 0 3rem 1rem 1rem;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  margin: 1.4rem 3rem 3rem 1rem;
+}
+span {
+  color: var(--Darkcyan);
+  font-size: 3.3rem;
+  font-family: "Fraunces", serif;
+  margin-right: 2rem;
+}
+
+h2 s {
+  color: var(--Darkgrayishblue);
+}
+
+.box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 5rem;
+  background-color: var(--DarkGreen);
+  border-radius: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.box-button svg path {
+  fill: var(--White);
+}
+
+.box-button span {
+  margin-left: 4rem;
+  width: 0;
+}
+
+.box-button:hover {
+  scale: 1.1;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: var(--White);
+}
+
+.button-margin-ajust {
+  margin-right: 2.5rem;
+  margin-left: 1rem;
+}
+
+.box-button:hover::after,
+h3:hover {
+  scale: 1.05;
+}
+
+@media (max-width: 50rem) {
+  .box-content {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 70rem;
+  }
+
+  .box-img-content {
+    background-size: cover;
+    background-position: center;
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .box-text-content {
+    width: 34rem;
+  }
+
+  .perfum-title {
+    margin-top: 0rem;
+  }
+
+  .box-text h1 {
+    font-size: 3.2rem;
+    width: 80%;
+  }
+
+  .perfum-description {
+    margin: 0 0rem 0rem 0rem;
+  }
+
+  .box-button {
+    width: 33rem;
+    margin-left: 1rem;
+  }
+}

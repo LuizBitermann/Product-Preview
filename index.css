@@ -41,7 +41,7 @@ body {
   border-radius: 1rem;
 }
 .box-img-content {
-  background-image: url(/Projeto-Site/img/image-product-desktop.jpg);
+  background-image: url(./Projeto-Site/img/image-product-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
